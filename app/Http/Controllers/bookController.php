@@ -10,7 +10,7 @@ class bookController extends Controller
     public function getBooks()
     {
         # code...
-        return book::all();
+        return book::orderBy('id', 'DESC')->get();
     }
 
     // Crear un libro
